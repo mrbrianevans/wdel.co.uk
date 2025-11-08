@@ -1,0 +1,14 @@
+{
+  "name": "wdel",
+  "version": "1.0.0",
+  "description": "Whetstone Data Engineering Ltd website",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "bun index.html",
+    "build": "bun build ./index.html --outdir=dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "private": true
+}
