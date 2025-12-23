@@ -10,3 +10,15 @@ div.page {
     padding: 2rem 1rem;
     box-sizing: border-box;
 }
+
+h2 {
+    margin: 1rem 0 0;
+}
+
+p {
+    margin: 0.4em 0;
+}
+
+hr {
+    margin: 2rem auto;
+}

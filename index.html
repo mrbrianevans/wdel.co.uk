@@ -6,22 +6,71 @@
     <link rel="stylesheet" href="src/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 
 <div class="page">
-    <h1>Whetstone Data Engineering Ltd</h1>
-    <p>Whetstone Data Engineering Ltd provides data engineering consultancy services with expertise in the Companies House dataset.</p>
+    <header>
+        <h1>Whetstone Data Engineering Ltd</h1>
+        <p>Whetstone Data Engineering Ltd provides professional data engineering consultancy services.</p>
+    </header>
 
-    <p>Brian Evans is a senior software and data engineer with over 5 years experience working with Companies House data. See <a href="https://brianevans.tech">brianevans.tech</a> for a summary of his work.</p>
-    <p>To get in touch, please message Brian on LinkedIn. Email available on request to avoid spam.</p>
+    <hr/>
 
-    <footer>
+    <section>
+        <h2>Brian Evans</h2>
+        <p style="margin: 0; font-size: 0.9em">Principal Consultant, Data Engineer, <a href="https://brianevans.tech">brianevans.tech</a>.
+        </p>
+        <p>Brian is a technical expert with deep knowledge and experience building data-oriented and event-driven
+            systems.</p>
+
+        <p>
+            He is a senior software and data engineer with over 5 years experience working with Companies House data.
+            His
+            <a href="https://github.com/mrbrianevans">GitHub profile</a> contains many examples of his work, including
+            open source data projects with Companies House data.
+        </p>
+        <p>
+            The <a href="https://companies.stream">companies.stream</a> site launched in 2021, as a visualisation of
+            real
+            time updates to the Companies House data set.
+        </p>
+    </section>
+
+    <section>
+        <h2>Services</h2>
+        <p>Whetstone Data Engineering Ltd can help your business with these services:</p>
+        <ul>
+            <li>designing data system architectures</li>
+            <li>reviewing system architectures (current or planned)</li>
+            <li>setting up databases, data lakes, lake houses and data warehouses</li>
+            <li>implementing data ingestion pipelines</li>
+            <li>consultation, advice and training on Companies House integrations</li>
+            <li>implementing integrations with Companies House (batch, streaming or REST)</li>
+        </ul>
+        <p>If you have bespoke requirements that don't fit into any of the above, please send an enquiry and we will
+            make every effort to accommodate you.</p>
+    </section>
+
+
+    <section>
+        <h2>Contact</h2>
+        <p>Whetstone Data Engineering Ltd is based in Somerton, Somerset, UK.</p>
+        <p>Travel to on-site offices in London is available upon request.</p>
+        <p>To get in touch, please message <a href="https://www.linkedin.com/in/brianevanstech/">Brian on LinkedIn</a>.
+        </p>
+    </section>
+
+
+    <footer style="margin-top: 3.5rem; font-size: 0.8rem;">
         <hr/>
-        <p>Copyright &copy; 2025 Whetstone Data Engineering Ltd. Company 16700825 registered in England and Wales.</p>
+        <p>Copyright &copy; <span id="copyright-year">2026</span> Whetstone Data Engineering Ltd. Company 16700825
+            registered in England and Wales.</p>
     </footer>
 </div>
 
+<script src="src/index.ts"></script>
 </body>
 </html>
