@@ -6,11 +6,13 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "bun index.html",
-    "build": "bun build ./index.html --outdir=dist",
+    "build": "bun build ./index.html warehouse.html --outdir=dist",
     "format": "oxfmt",
     "typecheck": "tsc --build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "animejs": "^4.5.0"
+  },
   "devDependencies": {
     "oxfmt": "^0.57.0",
     "typescript": "^7.0.1-rc"
