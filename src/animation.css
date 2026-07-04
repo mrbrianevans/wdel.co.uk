@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nunito Sans", system-ui, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin: 0 0 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.diagram-wrap {
+  position: relative;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.diagram-wrap svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flow-line {
+  stroke-linecap: round;
+}
+
+.data-packet {
+  opacity: 0.55;
+}
