@@ -1,14 +1,18 @@
 {
   "name": "wdel",
   "version": "1.0.0",
+  "private": true,
   "description": "Whetstone Data Engineering Ltd website",
   "main": "dist/index.js",
   "scripts": {
     "dev": "bun index.html",
-    "build": "bun build ./index.html --outdir=dist"
+    "build": "bun build ./index.html --outdir=dist",
+    "format": "oxfmt",
+    "typecheck": "tsc --build"
   },
   "dependencies": {},
   "devDependencies": {
-  },
-  "private": true
+    "oxfmt": "^0.57.0",
+    "typescript": "^7.0.1-rc"
+  }
 }

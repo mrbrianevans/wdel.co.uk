@@ -1,4 +1,4 @@
-const copyrightYear = document.getElementById('copyright-year');
+const copyrightYear = document.getElementById("copyright-year");
 if (copyrightYear) {
-    copyrightYear.innerText = new Date().getFullYear().toString();
+  copyrightYear.innerText = new Date().getFullYear().toString();
 }
