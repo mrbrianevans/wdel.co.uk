@@ -22,3 +22,12 @@ p {
 hr {
   margin: 2rem auto;
 }
+
+dt {
+  font-weight: bold;
+  margin-top: 0.6em;
+}
+
+dd {
+  margin: 0.2em 0 0.4em 1.25rem;
+}

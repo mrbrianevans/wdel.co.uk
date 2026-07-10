@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Accountancy Enterprise Data Warehouse | Whetstone Data Engineering Ltd</title>
+    <link rel="stylesheet" href="src/styles.css" />
     <link rel="stylesheet" href="src/animation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,13 +15,15 @@
   <body>
     <div class="page">
       <header>
-        <p class="site-nav"><a href="index.html">Whetstone Data Engineering Ltd</a></p>
+        <p><a href="index.html">Whetstone Data Engineering Ltd</a></p>
         <h1>Accountancy Enterprise Data Warehouse</h1>
         <p>
           A central, cloud-hosted data warehouse for mid-to-large UK accountancy practices —
           independent of practice management software, ready for reporting, automations and AI.
         </p>
       </header>
+
+      <hr />
 
       <main>
         <figure class="diagram-wrap">
@@ -484,7 +487,9 @@
           </figcaption>
         </figure>
 
-        <article class="content">
+        <hr />
+
+        <article>
           <section aria-labelledby="problem-heading">
             <h2 id="problem-heading">The problem with legacy data infrastructure</h2>
             <p>
@@ -604,48 +609,52 @@
           <section aria-labelledby="pricing-heading">
             <h2 id="pricing-heading">Pricing</h2>
             <p>Pricing is transparent and day-rate based.</p>
-            <dl class="pricing">
-              <div>
-                <dt>Senior engineer day rate</dt>
-                <dd>£750 + VAT per day</dd>
-              </div>
-              <div>
-                <dt>Typical mid-size implementation</dt>
-                <dd>Around £100,000 total project cost, including cloud hosting infrastructure</dd>
-              </div>
-              <div>
-                <dt>Ongoing annual cost</dt>
-                <dd>Approximately £10,000 for maintenance and hosting</dd>
-              </div>
+            <dl>
+              <dt>Senior engineer day rate</dt>
+              <dd>£750 + VAT per day</dd>
+              <dt>Typical mid-size implementation</dt>
+              <dd>Around £100,000 total project cost, including cloud hosting infrastructure</dd>
+              <dt>Ongoing annual cost</dt>
+              <dd>Approximately £10,000 for maintenance and hosting</dd>
             </dl>
           </section>
 
-          <section aria-labelledby="stages-heading">
+          <section class="stages-section" aria-labelledby="stages-heading">
             <h2 id="stages-heading">Project stages</h2>
             <p>Delivery follows structured stages, so progress is steady and visible:</p>
-            <ol class="stages">
+            <ol class="project-stages">
               <li>
-                <strong>Environment setup</strong> — cloud platform, version control, CI/CD and dbt
+                <strong>Environment setup</strong>
+                <span>Cloud platform, version control, CI/CD and dbt</span>
               </li>
               <li>
-                <strong>Pipeline foundation</strong> — Airflow ingestion pipeline setup, Fivetran
+                <strong>Pipeline foundation</strong>
+                <span>Airflow ingestion pipeline setup, Fivetran</span>
               </li>
               <li>
-                <strong>Source ingestion</strong> — practice management replication to BigQuery and
-                core services via Airflow, then enrichment from peripheral sources
+                <strong>Source ingestion</strong>
+                <span>
+                  Practice management replication to BigQuery and core services via Airflow, then
+                  enrichment from peripheral sources
+                </span>
               </li>
               <li>
-                <strong>Data modelling in dbt</strong> — staging models for standardisation, marts
-                for reporting, a Kimball-style fact–dimension model and standard models for common
-                concepts such as clients, staff and jobs
+                <strong>Data modelling in dbt</strong>
+                <span>
+                  Staging models for standardisation, marts for reporting, a Kimball-style
+                  fact–dimension model and standard models for clients, staff and jobs
+                </span>
               </li>
               <li>
-                <strong>Reporting and automations</strong> — collaboration with reporting and
-                automation teams to migrate reports and build use cases
+                <strong>Reporting and automations</strong>
+                <span>
+                  Collaboration with reporting and automation teams to migrate reports and build use
+                  cases
+                </span>
               </li>
               <li>
-                <strong>Transition to maintenance</strong> — handover, training and steady-state
-                support
+                <strong>Transition to maintenance</strong>
+                <span>Handover, training and steady-state support</span>
               </li>
             </ol>
           </section>
@@ -662,7 +671,8 @@
         </article>
       </main>
 
-      <footer>
+      <footer style="margin-top: 3.5rem; font-size: 0.8rem">
+        <hr />
         <p>
           <a href="index.html">Back to Whetstone Data Engineering Ltd</a>
         </p>
@@ -674,5 +684,6 @@
     </div>
 
     <script type="module" src="src/animation.ts"></script>
+    <script src="src/index.ts"></script>
   </body>
 </html>
