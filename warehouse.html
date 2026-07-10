@@ -30,7 +30,7 @@
           <svg
             viewBox="0 0 1280 740"
             role="img"
-            aria-label="Animated data warehouse architecture diagram"
+            aria-label="Architecture diagram: service line software, practice-wide software and public data feed a cloud enterprise data warehouse for reporting, automations and AI"
           >
             <defs>
               <linearGradient id="lob-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -63,43 +63,41 @@
               </linearGradient>
             </defs>
 
-            <!-- LoB section (arc right) -->
-            <rect x="40" y="40" width="300" height="290" fill="#f8fafc" stroke="#bae6fd" />
+            <!-- Service line software (client delivery tools) -->
+            <rect x="40" y="28" width="300" height="248" fill="#f8fafc" stroke="#bae6fd" />
             <text
               x="56"
-              y="72"
+              y="56"
               fill="#0369a1"
               font-size="13"
               font-weight="700"
               letter-spacing="0.04em"
             >
-              LINE OF BUSINESS APPLICATIONS
+              SERVICE LINE SOFTWARE
             </text>
-            <text x="56" y="94" fill="#64748b" font-size="11">
-              Business users generating operational data
-            </text>
+            <text x="56" y="76" fill="#64748b" font-size="11">Line of business applications</text>
 
-            <!-- Practice management section (arc left) -->
-            <rect x="12" y="350" width="300" height="140" fill="#f0fdfa" stroke="#99f6e4" />
+            <!-- Practice-wide software (internal firm systems) -->
+            <rect x="12" y="286" width="300" height="250" fill="#f0fdfa" stroke="#99f6e4" />
             <text
               x="28"
-              y="382"
+              y="314"
               fill="#0f766e"
               font-size="13"
               font-weight="700"
               letter-spacing="0.04em"
             >
-              PRACTICE MANAGEMENT SOFTWARE
+              PRACTICE-WIDE SOFTWARE
             </text>
-            <text x="28" y="404" fill="#64748b" font-size="11">
-              Firm operations, client work and revenue data
+            <text x="28" y="334" fill="#64748b" font-size="11">
+              Internal systems across the firm
             </text>
 
-            <!-- Public section (arc right) -->
-            <rect x="40" y="510" width="300" height="210" fill="#faf5ff" stroke="#ddd6fe" />
+            <!-- Public sources -->
+            <rect x="40" y="546" width="300" height="184" fill="#faf5ff" stroke="#ddd6fe" />
             <text
               x="56"
-              y="542"
+              y="574"
               fill="#6d28d9"
               font-size="13"
               font-weight="700"
@@ -107,9 +105,7 @@
             >
               PUBLIC DATA SOURCES
             </text>
-            <text x="56" y="564" fill="#64748b" font-size="11">
-              External registers and open government data
-            </text>
+            <text x="56" y="594" fill="#64748b" font-size="11">Enrichment from open registers</text>
 
             <!-- Use cases section -->
             <rect x="800" y="40" width="440" height="660" fill="#f8fafc" stroke="#cbd5e1" />
@@ -124,7 +120,7 @@
               USE CASES
             </text>
             <text x="816" y="94" fill="#64748b" font-size="11">
-              Consumption of warehouse data across the firm
+              Reporting, automations and AI from one store
             </text>
 
             <g id="automations" class="use-case-box">
@@ -141,9 +137,14 @@
                 Automations
               </text>
               <text x="836" y="168" fill="#64748b" font-size="11">
-                Syncing data between systems
+                Synchronise data between systems
               </text>
-              <text x="836" y="186" fill="#64748b" font-size="11">Sending event-driven emails</text>
+              <text x="836" y="186" fill="#64748b" font-size="11">
+                e.g. onboarding: applications → HR → PMS
+              </text>
+              <text x="836" y="204" fill="#64748b" font-size="11">
+                Less manual entry, more consistency
+              </text>
             </g>
 
             <g id="business-intelligence" class="use-case-box">
@@ -157,16 +158,15 @@
                 stroke-width="1.5"
               />
               <text x="836" y="332" fill="#312e81" font-size="14" font-weight="700">
-                Business Intelligence Reporting
+                Management Reporting
               </text>
-              <text x="836" y="356" fill="#64748b" font-size="11">
-                Power BI dashboards and reports
-              </text>
-              <text x="836" y="374" fill="#64748b" font-size="11">
-                Management reporting and service line dashboards
-              </text>
+              <text x="836" y="356" fill="#64748b" font-size="11">Workflow tracking</text>
+              <text x="836" y="374" fill="#64748b" font-size="11">Capacity planning</text>
               <text x="836" y="392" fill="#64748b" font-size="11">
-                Finance team analysis and monitoring
+                Client payrolls due this week
+              </text>
+              <text x="836" y="410" fill="#64748b" font-size="11">
+                Statutory deadlines from Companies House
               </text>
             </g>
 
@@ -182,82 +182,112 @@
               />
               <text x="836" y="548" fill="#701a75" font-size="14" font-weight="700">AI</text>
               <text x="836" y="572" fill="#64748b" font-size="11">
-                Providing accurate business context
+                Accurate firm context for LLMs
               </text>
-              <text x="836" y="590" fill="#64748b" font-size="11">for LLMs and agents</text>
+              <text x="836" y="590" fill="#64748b" font-size="11">
+                Foundation for future AI initiatives
+              </text>
             </g>
 
-            <!-- LoB source boxes -->
+            <!-- Service line examples -->
             <g id="payroll" class="source-box">
               <rect
                 x="64"
-                y="108"
+                y="90"
                 width="252"
-                height="58"
+                height="50"
                 fill="url(#lob-gradient)"
                 stroke="#0284c7"
                 stroke-width="1.5"
               />
-              <text x="80" y="134" fill="#0c4a6e" font-size="13" font-weight="600">
-                Payroll Software
-              </text>
-              <text x="80" y="152" fill="#64748b" font-size="10">
-                Payslips, tax, pensions, RTI submissions
-              </text>
-            </g>
-
-            <g id="accounts" class="source-box">
-              <rect
-                x="64"
-                y="180"
-                width="252"
-                height="58"
-                fill="url(#lob-gradient)"
-                stroke="#0284c7"
-                stroke-width="1.5"
-              />
-              <text x="80" y="206" fill="#0c4a6e" font-size="13" font-weight="600">
-                Accounts Software
-              </text>
-              <text x="80" y="224" fill="#64748b" font-size="10">
-                Ledgers, journals, VAT returns, bank feeds
+              <text x="80" y="112" fill="#0c4a6e" font-size="13" font-weight="600">Payroll</text>
+              <text x="80" y="128" fill="#64748b" font-size="10">
+                Client payroll runs and compliance
               </text>
             </g>
 
             <g id="audit" class="source-box">
               <rect
                 x="64"
-                y="252"
+                y="148"
                 width="252"
-                height="58"
+                height="50"
                 fill="url(#lob-gradient)"
                 stroke="#0284c7"
                 stroke-width="1.5"
               />
-              <text x="80" y="278" fill="#0c4a6e" font-size="13" font-weight="600">
-                Audit Software
-              </text>
-              <text x="80" y="296" fill="#64748b" font-size="10">
-                Working papers, evidence, sign-off trails
+              <text x="80" y="170" fill="#0c4a6e" font-size="13" font-weight="600">Audit</text>
+              <text x="80" y="186" fill="#64748b" font-size="10">
+                Working papers, tasks and progress
               </text>
             </g>
 
-            <!-- Practice management source -->
+            <g id="accounts-production" class="source-box">
+              <rect
+                x="64"
+                y="206"
+                width="252"
+                height="50"
+                fill="url(#lob-gradient)"
+                stroke="#0284c7"
+                stroke-width="1.5"
+              />
+              <text x="80" y="228" fill="#0c4a6e" font-size="13" font-weight="600">
+                Accounts Production
+              </text>
+              <text x="80" y="244" fill="#64748b" font-size="10">
+                And insolvency, tax… other lines
+              </text>
+            </g>
+
+            <!-- Practice-wide software children -->
             <g id="practice-management" class="source-box">
               <rect
                 x="36"
-                y="420"
+                y="348"
                 width="252"
-                height="58"
+                height="50"
                 fill="url(#practice-gradient)"
                 stroke="#0d9488"
                 stroke-width="1.5"
               />
-              <text x="52" y="446" fill="#134e4a" font-size="13" font-weight="600">
-                Practice Management Software
+              <text x="52" y="370" fill="#134e4a" font-size="13" font-weight="600">
+                Practice Management
               </text>
-              <text x="52" y="464" fill="#64748b" font-size="10">
-                Timesheets, billing, cash received
+              <text x="52" y="386" fill="#64748b" font-size="10">
+                Time and fees, billing, cash received
+              </text>
+            </g>
+
+            <g id="hr" class="source-box">
+              <rect
+                x="36"
+                y="406"
+                width="252"
+                height="50"
+                fill="url(#practice-gradient)"
+                stroke="#0d9488"
+                stroke-width="1.5"
+              />
+              <text x="52" y="428" fill="#134e4a" font-size="13" font-weight="600">HR</text>
+              <text x="52" y="444" fill="#64748b" font-size="10">
+                Applicants, business units, time off
+              </text>
+            </g>
+
+            <g id="it" class="source-box">
+              <rect
+                x="36"
+                y="464"
+                width="252"
+                height="50"
+                fill="url(#practice-gradient)"
+                stroke="#0d9488"
+                stroke-width="1.5"
+              />
+              <text x="52" y="486" fill="#134e4a" font-size="13" font-weight="600">IT</text>
+              <text x="52" y="502" fill="#64748b" font-size="10">
+                User list, document management
               </text>
             </g>
 
@@ -265,35 +295,35 @@
             <g id="companies-house" class="source-box">
               <rect
                 x="64"
-                y="580"
+                y="608"
                 width="252"
-                height="58"
+                height="50"
                 fill="url(#public-gradient)"
                 stroke="#7c3aed"
                 stroke-width="1.5"
               />
-              <text x="80" y="606" fill="#4c1d95" font-size="13" font-weight="600">
+              <text x="80" y="630" fill="#4c1d95" font-size="13" font-weight="600">
                 Companies House
               </text>
-              <text x="80" y="624" fill="#64748b" font-size="10">
-                Company filings, officers, PSC register
+              <text x="80" y="646" fill="#64748b" font-size="10">
+                Filings, officers, statutory deadlines
               </text>
             </g>
 
             <g id="charity-commission" class="source-box">
               <rect
                 x="64"
-                y="654"
+                y="666"
                 width="252"
-                height="58"
+                height="50"
                 fill="url(#public-gradient)"
                 stroke="#7c3aed"
                 stroke-width="1.5"
               />
-              <text x="80" y="680" fill="#4c1d95" font-size="13" font-weight="600">
+              <text x="80" y="688" fill="#4c1d95" font-size="13" font-weight="600">
                 Charity Commission
               </text>
-              <text x="80" y="698" fill="#64748b" font-size="10">
+              <text x="80" y="704" fill="#64748b" font-size="10">
                 Charity registers, accounts, trustees
               </text>
             </g>
@@ -302,16 +332,7 @@
             <path
               id="path-payroll"
               class="flow-line"
-              d="M 316 137 C 390 137, 420 260, 450 300"
-              fill="none"
-              stroke="#0284c7"
-              stroke-width="2"
-              opacity="0.35"
-            />
-            <path
-              id="path-accounts"
-              class="flow-line"
-              d="M 316 209 C 400 209, 430 290, 450 320"
+              d="M 316 115 C 390 115, 420 250, 450 300"
               fill="none"
               stroke="#0284c7"
               stroke-width="2"
@@ -320,7 +341,16 @@
             <path
               id="path-audit"
               class="flow-line"
-              d="M 316 281 C 410 281, 440 330, 450 340"
+              d="M 316 173 C 400 173, 430 280, 450 320"
+              fill="none"
+              stroke="#0284c7"
+              stroke-width="2"
+              opacity="0.35"
+            />
+            <path
+              id="path-accounts-production"
+              class="flow-line"
+              d="M 316 231 C 410 231, 440 310, 450 340"
               fill="none"
               stroke="#0284c7"
               stroke-width="2"
@@ -329,7 +359,25 @@
             <path
               id="path-practice-management"
               class="flow-line"
-              d="M 288 449 C 370 449, 420 390, 450 350"
+              d="M 288 373 C 370 373, 420 350, 450 350"
+              fill="none"
+              stroke="#0d9488"
+              stroke-width="2"
+              opacity="0.35"
+            />
+            <path
+              id="path-hr"
+              class="flow-line"
+              d="M 288 431 C 370 431, 420 370, 450 370"
+              fill="none"
+              stroke="#0d9488"
+              stroke-width="2"
+              opacity="0.35"
+            />
+            <path
+              id="path-it"
+              class="flow-line"
+              d="M 288 489 C 370 489, 420 400, 450 390"
               fill="none"
               stroke="#0d9488"
               stroke-width="2"
@@ -338,7 +386,7 @@
             <path
               id="path-companies-house"
               class="flow-line"
-              d="M 316 609 C 400 609, 440 450, 450 370"
+              d="M 316 633 C 400 633, 440 460, 450 400"
               fill="none"
               stroke="#7c3aed"
               stroke-width="2"
@@ -347,7 +395,7 @@
             <path
               id="path-charity-commission"
               class="flow-line"
-              d="M 316 683 C 410 683, 450 480, 450 400"
+              d="M 316 691 C 410 691, 450 500, 450 420"
               fill="none"
               stroke="#7c3aed"
               stroke-width="2"
@@ -396,29 +444,39 @@
               />
               <text
                 x="590"
-                y="204"
+                y="200"
                 text-anchor="middle"
                 fill="#14532d"
-                font-size="20"
+                font-size="18"
                 font-weight="700"
               >
-                Data Warehouse
+                Enterprise Data
               </text>
-              <text x="590" y="228" text-anchor="middle" fill="#15803d" font-size="12">
-                Central analytical store
+              <text
+                x="590"
+                y="222"
+                text-anchor="middle"
+                fill="#14532d"
+                font-size="18"
+                font-weight="700"
+              >
+                Warehouse
+              </text>
+              <text x="590" y="244" text-anchor="middle" fill="#15803d" font-size="11">
+                Cloud-hosted · software-independent
               </text>
 
               <rect
                 class="warehouse-layer"
                 x="472"
-                y="260"
+                y="268"
                 width="72"
-                height="200"
+                height="192"
                 fill="#dcfce7"
                 stroke="#86efac"
               />
               <text
-                transform="translate(508 360) rotate(-90)"
+                transform="translate(508 364) rotate(-90)"
                 text-anchor="middle"
                 fill="#166534"
                 font-size="11"
@@ -430,14 +488,14 @@
               <rect
                 class="warehouse-layer"
                 x="554"
-                y="260"
+                y="268"
                 width="72"
-                height="200"
+                height="192"
                 fill="#bbf7d0"
                 stroke="#4ade80"
               />
               <text
-                transform="translate(590 360) rotate(-90)"
+                transform="translate(590 364) rotate(-90)"
                 text-anchor="middle"
                 fill="#166534"
                 font-size="11"
@@ -449,24 +507,24 @@
               <rect
                 class="warehouse-layer"
                 x="636"
-                y="260"
+                y="268"
                 width="72"
-                height="200"
+                height="192"
                 fill="#86efac"
                 stroke="#22c55e"
               />
               <text
-                transform="translate(672 360) rotate(-90)"
+                transform="translate(672 364) rotate(-90)"
                 text-anchor="middle"
                 fill="#14532d"
                 font-size="11"
                 font-weight="600"
               >
-                Mart
+                Marts
               </text>
 
-              <text x="590" y="500" text-anchor="middle" fill="#64748b" font-size="11">
-                SQL data transformation
+              <text x="590" y="492" text-anchor="middle" fill="#64748b" font-size="11">
+                dbt models
               </text>
             </g>
 
@@ -483,7 +541,8 @@
             </g>
           </svg>
           <figcaption>
-            Sources feed a central data warehouse, powering automations, reporting and AI use cases.
+            Service line software, practice-wide systems and public data feed a cloud enterprise
+            data warehouse — powering reporting, automations and AI.
           </figcaption>
         </figure>
 
@@ -532,9 +591,14 @@
               software. It ingests data from multiple sources, including:
             </p>
             <ul>
-              <li>Time and fees from practice management systems</li>
-              <li>Service line data such as workflows, tasks and progress</li>
-              <li>HR employee records</li>
+              <li>
+                Service line software used to deliver client work (for example payroll, audit,
+                accounts production or insolvency)
+              </li>
+              <li>
+                Practice-wide software: practice management (time and fees), HR (applicants,
+                business units, time off) and IT (user directories, document management)
+              </li>
               <li>Public sources such as Companies House and the Charity Commission</li>
             </ul>
           </section>
@@ -547,12 +611,12 @@
               include:
             </p>
             <ul>
-              <li>Work-in-progress reporting segmented by business unit using HR system data</li>
-              <li>Debt reporting segmented by SIC code from Companies House</li>
               <li>
-                Service line dashboards such as payrolls due this week, combining payroll software
-                and workflow management data
+                Workflow tracking and capacity planning — combining service line work with HR
+                availability, business units and time off
               </li>
+              <li>Client payrolls due this week, combining payroll software and workflow data</li>
+              <li>Reporting on statutory deadlines from Companies House</li>
             </ul>
             <p>
               These capabilities support service line efficiency, management decision-making and
