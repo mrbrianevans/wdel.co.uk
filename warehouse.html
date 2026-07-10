@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Data Warehouse Architecture</title>
+    <title>Accountancy Enterprise Data Warehouse | Whetstone Data Engineering Ltd</title>
     <link rel="stylesheet" href="src/animation.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,465 +14,663 @@
   <body>
     <div class="page">
       <header>
-        <h1>Accountancy Enterprise Data Architecture</h1>
+        <p class="site-nav"><a href="index.html">Whetstone Data Engineering Ltd</a></p>
+        <h1>Accountancy Enterprise Data Warehouse</h1>
         <p>
-          Sources feed a central data warehouse, powering automations, reporting and AI use cases
+          A central, cloud-hosted data warehouse for mid-to-large UK accountancy practices —
+          independent of practice management software, ready for reporting, automations and AI.
         </p>
       </header>
 
-      <div class="diagram-wrap">
-        <svg
-          viewBox="0 0 1280 740"
-          role="img"
-          aria-label="Animated data warehouse architecture diagram"
-        >
-          <defs>
-            <linearGradient id="lob-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#e0f2fe" />
-              <stop offset="100%" stop-color="#f0f9ff" />
-            </linearGradient>
-            <linearGradient id="practice-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#ccfbf1" />
-              <stop offset="100%" stop-color="#f0fdfa" />
-            </linearGradient>
-            <linearGradient id="public-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#ede9fe" />
-              <stop offset="100%" stop-color="#f5f3ff" />
-            </linearGradient>
-            <linearGradient id="warehouse-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#ecfdf5" />
-              <stop offset="100%" stop-color="#f0fdf4" />
-            </linearGradient>
-            <linearGradient id="automation-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#fffbeb" />
-              <stop offset="100%" stop-color="#fefce8" />
-            </linearGradient>
-            <linearGradient id="bi-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#eef2ff" />
-              <stop offset="100%" stop-color="#f5f7ff" />
-            </linearGradient>
-            <linearGradient id="ai-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#fdf4ff" />
-              <stop offset="100%" stop-color="#faf5ff" />
-            </linearGradient>
-          </defs>
-
-          <!-- LoB section (arc right) -->
-          <rect x="40" y="40" width="300" height="290" fill="#f8fafc" stroke="#bae6fd" />
-          <text
-            x="56"
-            y="72"
-            fill="#0369a1"
-            font-size="13"
-            font-weight="700"
-            letter-spacing="0.04em"
+      <main>
+        <figure class="diagram-wrap">
+          <svg
+            viewBox="0 0 1280 740"
+            role="img"
+            aria-label="Animated data warehouse architecture diagram"
           >
-            LINE OF BUSINESS APPLICATIONS
-          </text>
-          <text x="56" y="94" fill="#64748b" font-size="11">
-            Business users generating operational data
-          </text>
+            <defs>
+              <linearGradient id="lob-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#e0f2fe" />
+                <stop offset="100%" stop-color="#f0f9ff" />
+              </linearGradient>
+              <linearGradient id="practice-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ccfbf1" />
+                <stop offset="100%" stop-color="#f0fdfa" />
+              </linearGradient>
+              <linearGradient id="public-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#ede9fe" />
+                <stop offset="100%" stop-color="#f5f3ff" />
+              </linearGradient>
+              <linearGradient id="warehouse-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ecfdf5" />
+                <stop offset="100%" stop-color="#f0fdf4" />
+              </linearGradient>
+              <linearGradient id="automation-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#fffbeb" />
+                <stop offset="100%" stop-color="#fefce8" />
+              </linearGradient>
+              <linearGradient id="bi-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#eef2ff" />
+                <stop offset="100%" stop-color="#f5f7ff" />
+              </linearGradient>
+              <linearGradient id="ai-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#fdf4ff" />
+                <stop offset="100%" stop-color="#faf5ff" />
+              </linearGradient>
+            </defs>
 
-          <!-- Practice management section (arc left) -->
-          <rect x="12" y="350" width="300" height="140" fill="#f0fdfa" stroke="#99f6e4" />
-          <text
-            x="28"
-            y="382"
-            fill="#0f766e"
-            font-size="13"
-            font-weight="700"
-            letter-spacing="0.04em"
-          >
-            PRACTICE MANAGEMENT SOFTWARE
-          </text>
-          <text x="28" y="404" fill="#64748b" font-size="11">
-            Firm operations, client work and revenue data
-          </text>
-
-          <!-- Public section (arc right) -->
-          <rect x="40" y="510" width="300" height="210" fill="#faf5ff" stroke="#ddd6fe" />
-          <text
-            x="56"
-            y="542"
-            fill="#6d28d9"
-            font-size="13"
-            font-weight="700"
-            letter-spacing="0.04em"
-          >
-            PUBLIC DATA SOURCES
-          </text>
-          <text x="56" y="564" fill="#64748b" font-size="11">
-            External registers and open government data
-          </text>
-
-          <!-- Use cases section -->
-          <rect x="800" y="40" width="440" height="660" fill="#f8fafc" stroke="#cbd5e1" />
-          <text
-            x="816"
-            y="72"
-            fill="#334155"
-            font-size="13"
-            font-weight="700"
-            letter-spacing="0.04em"
-          >
-            USE CASES
-          </text>
-          <text x="816" y="94" fill="#64748b" font-size="11">
-            Consumption of warehouse data across the firm
-          </text>
-
-          <g id="automations" class="use-case-box">
-            <rect
-              x="820"
-              y="116"
-              width="400"
-              height="168"
-              fill="url(#automation-gradient)"
-              stroke="#d97706"
-              stroke-width="1.5"
-            />
-            <text x="836" y="144" fill="#92400e" font-size="14" font-weight="700">Automations</text>
-            <text x="836" y="168" fill="#64748b" font-size="11">Syncing data between systems</text>
-            <text x="836" y="186" fill="#64748b" font-size="11">Sending event-driven emails</text>
-          </g>
-
-          <g id="business-intelligence" class="use-case-box">
-            <rect
-              x="820"
-              y="304"
-              width="400"
-              height="196"
-              fill="url(#bi-gradient)"
-              stroke="#4f46e5"
-              stroke-width="1.5"
-            />
-            <text x="836" y="332" fill="#312e81" font-size="14" font-weight="700">
-              Business Intelligence Reporting
+            <!-- LoB section (arc right) -->
+            <rect x="40" y="40" width="300" height="290" fill="#f8fafc" stroke="#bae6fd" />
+            <text
+              x="56"
+              y="72"
+              fill="#0369a1"
+              font-size="13"
+              font-weight="700"
+              letter-spacing="0.04em"
+            >
+              LINE OF BUSINESS APPLICATIONS
             </text>
-            <text x="836" y="356" fill="#64748b" font-size="11">
-              Power BI dashboards and reports
+            <text x="56" y="94" fill="#64748b" font-size="11">
+              Business users generating operational data
             </text>
-            <text x="836" y="374" fill="#64748b" font-size="11">
-              Management reporting and service line dashboards
-            </text>
-            <text x="836" y="392" fill="#64748b" font-size="11">
-              Finance team analysis and monitoring
-            </text>
-          </g>
 
-          <g id="ai-use-case" class="use-case-box">
-            <rect
-              x="820"
-              y="520"
-              width="400"
-              height="156"
-              fill="url(#ai-gradient)"
-              stroke="#a21caf"
-              stroke-width="1.5"
-            />
-            <text x="836" y="548" fill="#701a75" font-size="14" font-weight="700">AI</text>
-            <text x="836" y="572" fill="#64748b" font-size="11">
-              Providing accurate business context
+            <!-- Practice management section (arc left) -->
+            <rect x="12" y="350" width="300" height="140" fill="#f0fdfa" stroke="#99f6e4" />
+            <text
+              x="28"
+              y="382"
+              fill="#0f766e"
+              font-size="13"
+              font-weight="700"
+              letter-spacing="0.04em"
+            >
+              PRACTICE MANAGEMENT SOFTWARE
             </text>
-            <text x="836" y="590" fill="#64748b" font-size="11">for LLMs and agents</text>
-          </g>
+            <text x="28" y="404" fill="#64748b" font-size="11">
+              Firm operations, client work and revenue data
+            </text>
 
-          <!-- LoB source boxes -->
-          <g id="payroll" class="source-box">
-            <rect
-              x="64"
-              y="108"
-              width="252"
-              height="58"
-              fill="url(#lob-gradient)"
+            <!-- Public section (arc right) -->
+            <rect x="40" y="510" width="300" height="210" fill="#faf5ff" stroke="#ddd6fe" />
+            <text
+              x="56"
+              y="542"
+              fill="#6d28d9"
+              font-size="13"
+              font-weight="700"
+              letter-spacing="0.04em"
+            >
+              PUBLIC DATA SOURCES
+            </text>
+            <text x="56" y="564" fill="#64748b" font-size="11">
+              External registers and open government data
+            </text>
+
+            <!-- Use cases section -->
+            <rect x="800" y="40" width="440" height="660" fill="#f8fafc" stroke="#cbd5e1" />
+            <text
+              x="816"
+              y="72"
+              fill="#334155"
+              font-size="13"
+              font-weight="700"
+              letter-spacing="0.04em"
+            >
+              USE CASES
+            </text>
+            <text x="816" y="94" fill="#64748b" font-size="11">
+              Consumption of warehouse data across the firm
+            </text>
+
+            <g id="automations" class="use-case-box">
+              <rect
+                x="820"
+                y="116"
+                width="400"
+                height="168"
+                fill="url(#automation-gradient)"
+                stroke="#d97706"
+                stroke-width="1.5"
+              />
+              <text x="836" y="144" fill="#92400e" font-size="14" font-weight="700">
+                Automations
+              </text>
+              <text x="836" y="168" fill="#64748b" font-size="11">
+                Syncing data between systems
+              </text>
+              <text x="836" y="186" fill="#64748b" font-size="11">Sending event-driven emails</text>
+            </g>
+
+            <g id="business-intelligence" class="use-case-box">
+              <rect
+                x="820"
+                y="304"
+                width="400"
+                height="196"
+                fill="url(#bi-gradient)"
+                stroke="#4f46e5"
+                stroke-width="1.5"
+              />
+              <text x="836" y="332" fill="#312e81" font-size="14" font-weight="700">
+                Business Intelligence Reporting
+              </text>
+              <text x="836" y="356" fill="#64748b" font-size="11">
+                Power BI dashboards and reports
+              </text>
+              <text x="836" y="374" fill="#64748b" font-size="11">
+                Management reporting and service line dashboards
+              </text>
+              <text x="836" y="392" fill="#64748b" font-size="11">
+                Finance team analysis and monitoring
+              </text>
+            </g>
+
+            <g id="ai-use-case" class="use-case-box">
+              <rect
+                x="820"
+                y="520"
+                width="400"
+                height="156"
+                fill="url(#ai-gradient)"
+                stroke="#a21caf"
+                stroke-width="1.5"
+              />
+              <text x="836" y="548" fill="#701a75" font-size="14" font-weight="700">AI</text>
+              <text x="836" y="572" fill="#64748b" font-size="11">
+                Providing accurate business context
+              </text>
+              <text x="836" y="590" fill="#64748b" font-size="11">for LLMs and agents</text>
+            </g>
+
+            <!-- LoB source boxes -->
+            <g id="payroll" class="source-box">
+              <rect
+                x="64"
+                y="108"
+                width="252"
+                height="58"
+                fill="url(#lob-gradient)"
+                stroke="#0284c7"
+                stroke-width="1.5"
+              />
+              <text x="80" y="134" fill="#0c4a6e" font-size="13" font-weight="600">
+                Payroll Software
+              </text>
+              <text x="80" y="152" fill="#64748b" font-size="10">
+                Payslips, tax, pensions, RTI submissions
+              </text>
+            </g>
+
+            <g id="accounts" class="source-box">
+              <rect
+                x="64"
+                y="180"
+                width="252"
+                height="58"
+                fill="url(#lob-gradient)"
+                stroke="#0284c7"
+                stroke-width="1.5"
+              />
+              <text x="80" y="206" fill="#0c4a6e" font-size="13" font-weight="600">
+                Accounts Software
+              </text>
+              <text x="80" y="224" fill="#64748b" font-size="10">
+                Ledgers, journals, VAT returns, bank feeds
+              </text>
+            </g>
+
+            <g id="audit" class="source-box">
+              <rect
+                x="64"
+                y="252"
+                width="252"
+                height="58"
+                fill="url(#lob-gradient)"
+                stroke="#0284c7"
+                stroke-width="1.5"
+              />
+              <text x="80" y="278" fill="#0c4a6e" font-size="13" font-weight="600">
+                Audit Software
+              </text>
+              <text x="80" y="296" fill="#64748b" font-size="10">
+                Working papers, evidence, sign-off trails
+              </text>
+            </g>
+
+            <!-- Practice management source -->
+            <g id="practice-management" class="source-box">
+              <rect
+                x="36"
+                y="420"
+                width="252"
+                height="58"
+                fill="url(#practice-gradient)"
+                stroke="#0d9488"
+                stroke-width="1.5"
+              />
+              <text x="52" y="446" fill="#134e4a" font-size="13" font-weight="600">
+                Practice Management Software
+              </text>
+              <text x="52" y="464" fill="#64748b" font-size="10">
+                Timesheets, billing, cash received
+              </text>
+            </g>
+
+            <!-- Public source boxes -->
+            <g id="companies-house" class="source-box">
+              <rect
+                x="64"
+                y="580"
+                width="252"
+                height="58"
+                fill="url(#public-gradient)"
+                stroke="#7c3aed"
+                stroke-width="1.5"
+              />
+              <text x="80" y="606" fill="#4c1d95" font-size="13" font-weight="600">
+                Companies House
+              </text>
+              <text x="80" y="624" fill="#64748b" font-size="10">
+                Company filings, officers, PSC register
+              </text>
+            </g>
+
+            <g id="charity-commission" class="source-box">
+              <rect
+                x="64"
+                y="654"
+                width="252"
+                height="58"
+                fill="url(#public-gradient)"
+                stroke="#7c3aed"
+                stroke-width="1.5"
+              />
+              <text x="80" y="680" fill="#4c1d95" font-size="13" font-weight="600">
+                Charity Commission
+              </text>
+              <text x="80" y="698" fill="#64748b" font-size="10">
+                Charity registers, accounts, trustees
+              </text>
+            </g>
+
+            <!-- Inbound flow paths -->
+            <path
+              id="path-payroll"
+              class="flow-line"
+              d="M 316 137 C 390 137, 420 260, 450 300"
+              fill="none"
               stroke="#0284c7"
-              stroke-width="1.5"
+              stroke-width="2"
+              opacity="0.35"
             />
-            <text x="80" y="134" fill="#0c4a6e" font-size="13" font-weight="600">
-              Payroll Software
-            </text>
-            <text x="80" y="152" fill="#64748b" font-size="10">
-              Payslips, tax, pensions, RTI submissions
-            </text>
-          </g>
-
-          <g id="accounts" class="source-box">
-            <rect
-              x="64"
-              y="180"
-              width="252"
-              height="58"
-              fill="url(#lob-gradient)"
+            <path
+              id="path-accounts"
+              class="flow-line"
+              d="M 316 209 C 400 209, 430 290, 450 320"
+              fill="none"
               stroke="#0284c7"
-              stroke-width="1.5"
+              stroke-width="2"
+              opacity="0.35"
             />
-            <text x="80" y="206" fill="#0c4a6e" font-size="13" font-weight="600">
-              Accounts Software
-            </text>
-            <text x="80" y="224" fill="#64748b" font-size="10">
-              Ledgers, journals, VAT returns, bank feeds
-            </text>
-          </g>
-
-          <g id="audit" class="source-box">
-            <rect
-              x="64"
-              y="252"
-              width="252"
-              height="58"
-              fill="url(#lob-gradient)"
+            <path
+              id="path-audit"
+              class="flow-line"
+              d="M 316 281 C 410 281, 440 330, 450 340"
+              fill="none"
               stroke="#0284c7"
-              stroke-width="1.5"
+              stroke-width="2"
+              opacity="0.35"
             />
-            <text x="80" y="278" fill="#0c4a6e" font-size="13" font-weight="600">
-              Audit Software
-            </text>
-            <text x="80" y="296" fill="#64748b" font-size="10">
-              Working papers, evidence, sign-off trails
-            </text>
-          </g>
-
-          <!-- Practice management source -->
-          <g id="practice-management" class="source-box">
-            <rect
-              x="36"
-              y="420"
-              width="252"
-              height="58"
-              fill="url(#practice-gradient)"
+            <path
+              id="path-practice-management"
+              class="flow-line"
+              d="M 288 449 C 370 449, 420 390, 450 350"
+              fill="none"
               stroke="#0d9488"
-              stroke-width="1.5"
+              stroke-width="2"
+              opacity="0.35"
             />
-            <text x="52" y="446" fill="#134e4a" font-size="13" font-weight="600">
-              Practice Management Software
-            </text>
-            <text x="52" y="464" fill="#64748b" font-size="10">
-              Timesheets, billing, cash received
-            </text>
-          </g>
-
-          <!-- Public source boxes -->
-          <g id="companies-house" class="source-box">
-            <rect
-              x="64"
-              y="580"
-              width="252"
-              height="58"
-              fill="url(#public-gradient)"
+            <path
+              id="path-companies-house"
+              class="flow-line"
+              d="M 316 609 C 400 609, 440 450, 450 370"
+              fill="none"
               stroke="#7c3aed"
-              stroke-width="1.5"
+              stroke-width="2"
+              opacity="0.35"
             />
-            <text x="80" y="606" fill="#4c1d95" font-size="13" font-weight="600">
-              Companies House
-            </text>
-            <text x="80" y="624" fill="#64748b" font-size="10">
-              Company filings, officers, PSC register
-            </text>
-          </g>
-
-          <g id="charity-commission" class="source-box">
-            <rect
-              x="64"
-              y="654"
-              width="252"
-              height="58"
-              fill="url(#public-gradient)"
+            <path
+              id="path-charity-commission"
+              class="flow-line"
+              d="M 316 683 C 410 683, 450 480, 450 400"
+              fill="none"
               stroke="#7c3aed"
-              stroke-width="1.5"
+              stroke-width="2"
+              opacity="0.35"
             />
-            <text x="80" y="680" fill="#4c1d95" font-size="13" font-weight="600">
-              Charity Commission
-            </text>
-            <text x="80" y="698" fill="#64748b" font-size="10">
-              Charity registers, accounts, trustees
-            </text>
-          </g>
 
-          <!-- Inbound flow paths -->
-          <path
-            id="path-payroll"
-            class="flow-line"
-            d="M 316 137 C 390 137, 420 260, 450 300"
-            fill="none"
-            stroke="#0284c7"
-            stroke-width="2"
-            opacity="0.35"
-          />
-          <path
-            id="path-accounts"
-            class="flow-line"
-            d="M 316 209 C 400 209, 430 290, 450 320"
-            fill="none"
-            stroke="#0284c7"
-            stroke-width="2"
-            opacity="0.35"
-          />
-          <path
-            id="path-audit"
-            class="flow-line"
-            d="M 316 281 C 410 281, 440 330, 450 340"
-            fill="none"
-            stroke="#0284c7"
-            stroke-width="2"
-            opacity="0.35"
-          />
-          <path
-            id="path-practice-management"
-            class="flow-line"
-            d="M 288 449 C 370 449, 420 390, 450 350"
-            fill="none"
-            stroke="#0d9488"
-            stroke-width="2"
-            opacity="0.35"
-          />
-          <path
-            id="path-companies-house"
-            class="flow-line"
-            d="M 316 609 C 400 609, 440 450, 450 370"
-            fill="none"
-            stroke="#7c3aed"
-            stroke-width="2"
-            opacity="0.35"
-          />
-          <path
-            id="path-charity-commission"
-            class="flow-line"
-            d="M 316 683 C 410 683, 450 480, 450 400"
-            fill="none"
-            stroke="#7c3aed"
-            stroke-width="2"
-            opacity="0.35"
-          />
-
-          <!-- Outbound flow paths -->
-          <path
-            id="path-out-automations"
-            class="flow-line flow-line-out"
-            d="M 730 300 C 770 260, 790 200, 820 200"
-            fill="none"
-            stroke="#16a34a"
-            stroke-width="2"
-            opacity="0.35"
-          />
-          <path
-            id="path-out-bi"
-            class="flow-line flow-line-out"
-            d="M 730 360 C 770 360, 790 400, 820 402"
-            fill="none"
-            stroke="#16a34a"
-            stroke-width="2"
-            opacity="0.35"
-          />
-          <path
-            id="path-out-ai"
-            class="flow-line flow-line-out"
-            d="M 730 420 C 770 460, 790 580, 820 598"
-            fill="none"
-            stroke="#16a34a"
-            stroke-width="2"
-            opacity="0.35"
-          />
-
-          <!-- Data warehouse -->
-          <g class="warehouse-core">
-            <rect
-              x="450"
-              y="160"
-              width="280"
-              height="400"
-              fill="url(#warehouse-gradient)"
+            <!-- Outbound flow paths -->
+            <path
+              id="path-out-automations"
+              class="flow-line flow-line-out"
+              d="M 730 300 C 770 260, 790 200, 820 200"
+              fill="none"
               stroke="#16a34a"
               stroke-width="2"
+              opacity="0.35"
             />
-            <text
-              x="590"
-              y="204"
-              text-anchor="middle"
-              fill="#14532d"
-              font-size="20"
-              font-weight="700"
-            >
-              Data Warehouse
-            </text>
-            <text x="590" y="228" text-anchor="middle" fill="#15803d" font-size="12">
-              Central analytical store
-            </text>
-
-            <rect
-              class="warehouse-layer"
-              x="472"
-              y="260"
-              width="72"
-              height="200"
-              fill="#dcfce7"
-              stroke="#86efac"
+            <path
+              id="path-out-bi"
+              class="flow-line flow-line-out"
+              d="M 730 360 C 770 360, 790 400, 820 402"
+              fill="none"
+              stroke="#16a34a"
+              stroke-width="2"
+              opacity="0.35"
             />
-            <text
-              transform="translate(508 360) rotate(-90)"
-              text-anchor="middle"
-              fill="#166534"
-              font-size="11"
-              font-weight="600"
-            >
-              Staging
-            </text>
-
-            <rect
-              class="warehouse-layer"
-              x="554"
-              y="260"
-              width="72"
-              height="200"
-              fill="#bbf7d0"
-              stroke="#4ade80"
+            <path
+              id="path-out-ai"
+              class="flow-line flow-line-out"
+              d="M 730 420 C 770 460, 790 580, 820 598"
+              fill="none"
+              stroke="#16a34a"
+              stroke-width="2"
+              opacity="0.35"
             />
-            <text
-              transform="translate(590 360) rotate(-90)"
-              text-anchor="middle"
-              fill="#166534"
-              font-size="11"
-              font-weight="600"
-            >
-              Intermediate
-            </text>
 
-            <rect
-              class="warehouse-layer"
-              x="636"
-              y="260"
-              width="72"
-              height="200"
-              fill="#86efac"
-              stroke="#22c55e"
-            />
-            <text
-              transform="translate(672 360) rotate(-90)"
-              text-anchor="middle"
-              fill="#14532d"
-              font-size="11"
-              font-weight="600"
-            >
-              Mart
-            </text>
+            <!-- Data warehouse -->
+            <g class="warehouse-core">
+              <rect
+                x="450"
+                y="160"
+                width="280"
+                height="400"
+                fill="url(#warehouse-gradient)"
+                stroke="#16a34a"
+                stroke-width="2"
+              />
+              <text
+                x="590"
+                y="204"
+                text-anchor="middle"
+                fill="#14532d"
+                font-size="20"
+                font-weight="700"
+              >
+                Data Warehouse
+              </text>
+              <text x="590" y="228" text-anchor="middle" fill="#15803d" font-size="12">
+                Central analytical store
+              </text>
 
-            <text x="590" y="500" text-anchor="middle" fill="#64748b" font-size="11">
-              SQL data transformation
-            </text>
-          </g>
+              <rect
+                class="warehouse-layer"
+                x="472"
+                y="260"
+                width="72"
+                height="200"
+                fill="#dcfce7"
+                stroke="#86efac"
+              />
+              <text
+                transform="translate(508 360) rotate(-90)"
+                text-anchor="middle"
+                fill="#166534"
+                font-size="11"
+                font-weight="600"
+              >
+                Staging
+              </text>
 
-          <!-- Loading indicator arrow -->
-          <g transform="translate(400, 348)">
-            <polygon points="0,0 14,8 0,16" fill="#16a34a" opacity="0.6" />
-            <text x="6" y="32" text-anchor="middle" fill="#15803d" font-size="9">LOAD</text>
-          </g>
+              <rect
+                class="warehouse-layer"
+                x="554"
+                y="260"
+                width="72"
+                height="200"
+                fill="#bbf7d0"
+                stroke="#4ade80"
+              />
+              <text
+                transform="translate(590 360) rotate(-90)"
+                text-anchor="middle"
+                fill="#166534"
+                font-size="11"
+                font-weight="600"
+              >
+                Intermediate
+              </text>
 
-          <!-- Serve indicator arrow -->
-          <g transform="translate(760, 348)">
-            <polygon points="0,0 14,8 0,16" fill="#16a34a" opacity="0.6" />
-            <text x="6" y="32" text-anchor="middle" fill="#15803d" font-size="9">SERVE</text>
-          </g>
-        </svg>
-      </div>
+              <rect
+                class="warehouse-layer"
+                x="636"
+                y="260"
+                width="72"
+                height="200"
+                fill="#86efac"
+                stroke="#22c55e"
+              />
+              <text
+                transform="translate(672 360) rotate(-90)"
+                text-anchor="middle"
+                fill="#14532d"
+                font-size="11"
+                font-weight="600"
+              >
+                Mart
+              </text>
+
+              <text x="590" y="500" text-anchor="middle" fill="#64748b" font-size="11">
+                SQL data transformation
+              </text>
+            </g>
+
+            <!-- Loading indicator arrow -->
+            <g transform="translate(400, 348)">
+              <polygon points="0,0 14,8 0,16" fill="#16a34a" opacity="0.6" />
+              <text x="6" y="32" text-anchor="middle" fill="#15803d" font-size="9">LOAD</text>
+            </g>
+
+            <!-- Serve indicator arrow -->
+            <g transform="translate(760, 348)">
+              <polygon points="0,0 14,8 0,16" fill="#16a34a" opacity="0.6" />
+              <text x="6" y="32" text-anchor="middle" fill="#15803d" font-size="9">SERVE</text>
+            </g>
+          </svg>
+          <figcaption>
+            Sources feed a central data warehouse, powering automations, reporting and AI use cases.
+          </figcaption>
+        </figure>
+
+        <article class="content">
+          <section aria-labelledby="problem-heading">
+            <h2 id="problem-heading">The problem with legacy data infrastructure</h2>
+            <p>
+              Many mid-to-large UK accountancy practices still run on-premises software backed by
+              Microsoft SQL Server, with reporting built on a Microsoft-centric pipeline of Fabric
+              and Power BI connected straight to operational databases. That model is under
+              increasing pressure.
+            </p>
+            <p>Common challenges include:</p>
+            <ul>
+              <li>High cost of maintaining on-premises SQL Server environments</li>
+              <li>
+                Capacity strain when operational databases are also used for analytics and reporting
+                — risking outages
+              </li>
+              <li>
+                Difficulty extracting data for AI and large language models that need accurate
+                business context
+              </li>
+            </ul>
+            <p>
+              Few firms have implemented a modern enterprise data warehouse on a cloud platform. The
+              sector is shifting toward cloud-hosted software such as Xero, which sits poorly with
+              existing management reporting and automations. Over the next decade, that migration is
+              expected to erode the dominance of the SQL Server, Fabric and Power BI ecosystem.
+            </p>
+            <p>
+              Other industries have already moved to modern cloud data platforms. Accountancy has
+              lagged — despite heavy reliance on data-driven reporting for time and fees, client
+              services and operational efficiency.
+            </p>
+          </section>
+
+          <section aria-labelledby="solution-heading">
+            <h2 id="solution-heading">A central cloud data warehouse</h2>
+            <p>
+              Whetstone Data Engineering Ltd implements a central, cloud-hosted enterprise data
+              warehouse for mid-to-large accountancy practices (typically 250+ employees). The
+              warehouse is independent of any particular practice management or service line
+              software. It ingests data from multiple sources, including:
+            </p>
+            <ul>
+              <li>Time and fees from practice management systems</li>
+              <li>Service line data such as workflows, tasks and progress</li>
+              <li>HR employee records</li>
+              <li>Public sources such as Companies House and the Charity Commission</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="capabilities-heading">
+            <h2 id="capabilities-heading">What the warehouse enables</h2>
+            <p>
+              Advanced reporting that many large practices cannot achieve today — constrained by
+              legacy systems and limited data engineering resource — becomes practical. Examples
+              include:
+            </p>
+            <ul>
+              <li>Work-in-progress reporting segmented by business unit using HR system data</li>
+              <li>Debt reporting segmented by SIC code from Companies House</li>
+              <li>
+                Service line dashboards such as payrolls due this week, combining payroll software
+                and workflow management data
+              </li>
+            </ul>
+            <p>
+              These capabilities support service line efficiency, management decision-making and
+              readiness for a more data-centric operating environment.
+            </p>
+            <p>
+              Automations can also synchronise data between systems to improve consistency and cut
+              manual entry. For example, employee onboarding can take data from a job applications
+              system, pre-populate HR records and flow through into the practice management system.
+            </p>
+          </section>
+
+          <section aria-labelledby="delivery-heading">
+            <h2 id="delivery-heading">How delivery works</h2>
+            <p>
+              An experienced senior technical engineer with software and data expertise is deployed
+              into the client practice for six to twelve months. They own the project and deliver
+              the objectives with minimal oversight from client management.
+            </p>
+            <ul>
+              <li>
+                <strong>Ownership:</strong> all data and code developed belongs exclusively to the
+                client
+              </li>
+              <li><strong>Billing:</strong> charged on a transparent per-day rate</li>
+              <li>
+                <strong>Governance:</strong> regular fortnightly or monthly presentation reports
+                cover progress and invite input
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="advantages-heading">
+            <h2 id="advantages-heading">Why engage Whetstone rather than building in-house</h2>
+            <p>
+              Compared with an internal implementation, this approach brings familiarity with the
+              technology stack, prior implementations at other firms and modern cloud expertise that
+              traditional practices often lack. Work can typically be completed at lower cost and on
+              a faster timeline, while avoiding costly architectural mistakes — components and
+              decisions have already been validated in an enterprise accountancy context.
+            </p>
+          </section>
+
+          <section aria-labelledby="maintenance-heading">
+            <h2 id="maintenance-heading">After go-live</h2>
+            <p>
+              Once the warehouse is operational and feeding live management dashboards, ongoing
+              maintenance is light: keeping pipelines healthy, adjusting for schema changes and
+              handling model change requests. Training can equip the client’s internal team to take
+              this on, with optional ongoing support (for example one day per month).
+            </p>
+          </section>
+
+          <section aria-labelledby="pricing-heading">
+            <h2 id="pricing-heading">Pricing</h2>
+            <p>Pricing is transparent and day-rate based.</p>
+            <dl class="pricing">
+              <div>
+                <dt>Senior engineer day rate</dt>
+                <dd>£750 + VAT per day</dd>
+              </div>
+              <div>
+                <dt>Typical mid-size implementation</dt>
+                <dd>Around £100,000 total project cost, including cloud hosting infrastructure</dd>
+              </div>
+              <div>
+                <dt>Ongoing annual cost</dt>
+                <dd>Approximately £10,000 for maintenance and hosting</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section aria-labelledby="stages-heading">
+            <h2 id="stages-heading">Project stages</h2>
+            <p>Delivery follows structured stages, so progress is steady and visible:</p>
+            <ol class="stages">
+              <li>
+                <strong>Environment setup</strong> — cloud platform, version control, CI/CD and dbt
+              </li>
+              <li>
+                <strong>Pipeline foundation</strong> — Airflow ingestion pipeline setup, Fivetran
+              </li>
+              <li>
+                <strong>Source ingestion</strong> — practice management replication to BigQuery and
+                core services via Airflow, then enrichment from peripheral sources
+              </li>
+              <li>
+                <strong>Data modelling in dbt</strong> — staging models for standardisation, marts
+                for reporting, a Kimball-style fact–dimension model and standard models for common
+                concepts such as clients, staff and jobs
+              </li>
+              <li>
+                <strong>Reporting and automations</strong> — collaboration with reporting and
+                automation teams to migrate reports and build use cases
+              </li>
+              <li>
+                <strong>Transition to maintenance</strong> — handover, training and steady-state
+                support
+              </li>
+            </ol>
+          </section>
+
+          <section aria-labelledby="summary-heading">
+            <h2 id="summary-heading">In summary</h2>
+            <p>
+              Engaging Whetstone Data Engineering Ltd helps legacy practices move beyond on-premises
+              constraints, unlock more value from existing data, improve operational efficiency and
+              establish a foundation for cloud adoption and AI — with full client ownership of data
+              and code.
+            </p>
+          </section>
+        </article>
+      </main>
+
+      <footer>
+        <p>
+          <a href="index.html">Back to Whetstone Data Engineering Ltd</a>
+        </p>
+        <p>
+          Copyright &copy; <span id="copyright-year">2026</span> Whetstone Data Engineering Ltd.
+          Company 16700825 registered in England and Wales.
+        </p>
+      </footer>
     </div>
 
     <script type="module" src="src/animation.ts"></script>

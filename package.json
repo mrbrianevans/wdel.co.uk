@@ -5,7 +5,7 @@
   "description": "Whetstone Data Engineering Ltd website",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "bun index.html",
+    "dev": "bun *.html",
     "build": "bun build ./index.html warehouse.html --outdir=dist",
     "format": "oxfmt",
     "typecheck": "tsc --build"
