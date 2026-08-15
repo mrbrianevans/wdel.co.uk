@@ -1,4 +1,4 @@
-import { animate, svg, stagger, utils } from "animejs";
+import { animate, svg, utils } from "animejs";
 
 type FlowConfig = {
   pathId: string;
@@ -166,14 +166,6 @@ function initDiagramAnimation(): void {
 
   createFlows(inboundSources, packetLayer);
   createFlows(outboundConsumers, packetLayer);
-
-  animate(".warehouse-layer", {
-    opacity: [0.75, 1, 0.75],
-    duration: 2800,
-    delay: stagger(300),
-    ease: "inOutSine",
-    loop: true,
-  });
 }
 
 if (document.readyState === "loading") {
