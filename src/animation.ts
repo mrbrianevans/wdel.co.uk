@@ -44,7 +44,7 @@ const inboundSources: FlowConfig[] = [
     durationJitter: 340,
   },
   {
-    pathId: "path-hr",
+    pathId: "path-hr-it",
     color: "#0d9488",
     interval: 2000,
     duration: 2650,
@@ -52,7 +52,7 @@ const inboundSources: FlowConfig[] = [
     durationJitter: 350,
   },
   {
-    pathId: "path-it",
+    pathId: "path-microsoft",
     color: "#0d9488",
     interval: 2400,
     duration: 2700,
