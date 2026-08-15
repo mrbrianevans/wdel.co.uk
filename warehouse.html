@@ -187,6 +187,8 @@
               <text x="836" y="590" fill="#64748b" font-size="11">
                 Foundation for future AI initiatives
               </text>
+              <text x="836" y="608" fill="#64748b" font-size="11">Relationship intelligence</text>
+              <text x="836" y="626" fill="#64748b" font-size="11">Document classification</text>
             </g>
 
             <!-- Service line examples -->
@@ -259,7 +261,7 @@
               </text>
             </g>
 
-            <g id="hr" class="source-box">
+            <g id="hr-it" class="source-box">
               <rect
                 x="36"
                 y="406"
@@ -269,13 +271,15 @@
                 stroke="#0d9488"
                 stroke-width="1.5"
               />
-              <text x="52" y="428" fill="#134e4a" font-size="13" font-weight="600">HR</text>
+              <text x="52" y="428" fill="#134e4a" font-size="13" font-weight="600">
+                HR &amp; IT
+              </text>
               <text x="52" y="444" fill="#64748b" font-size="10">
-                Applicants, business units, time off
+                Employees, hierarchies, users and documents
               </text>
             </g>
 
-            <g id="it" class="source-box">
+            <g id="microsoft" class="source-box">
               <rect
                 x="36"
                 y="464"
@@ -285,9 +289,9 @@
                 stroke="#0d9488"
                 stroke-width="1.5"
               />
-              <text x="52" y="486" fill="#134e4a" font-size="13" font-weight="600">IT</text>
+              <text x="52" y="486" fill="#134e4a" font-size="13" font-weight="600">Microsoft</text>
               <text x="52" y="502" fill="#64748b" font-size="10">
-                User list, document management
+                Calendars, emails, contacts and meetings
               </text>
             </g>
 
@@ -366,7 +370,7 @@
               opacity="0.35"
             />
             <path
-              id="path-hr"
+              id="path-hr-it"
               class="flow-line"
               d="M 288 431 C 370 431, 420 370, 450 370"
               fill="none"
@@ -375,7 +379,7 @@
               opacity="0.35"
             />
             <path
-              id="path-it"
+              id="path-microsoft"
               class="flow-line"
               d="M 288 489 C 370 489, 420 400, 450 390"
               fill="none"
@@ -444,7 +448,7 @@
               />
               <text
                 x="590"
-                y="200"
+                y="348"
                 text-anchor="middle"
                 fill="#14532d"
                 font-size="18"
@@ -454,7 +458,7 @@
               </text>
               <text
                 x="590"
-                y="222"
+                y="370"
                 text-anchor="middle"
                 fill="#14532d"
                 font-size="18"
@@ -462,82 +466,9 @@
               >
                 Warehouse
               </text>
-              <text x="590" y="244" text-anchor="middle" fill="#15803d" font-size="11">
+              <text x="590" y="394" text-anchor="middle" fill="#15803d" font-size="11">
                 Cloud-hosted · software-independent
               </text>
-
-              <rect
-                class="warehouse-layer"
-                x="472"
-                y="268"
-                width="72"
-                height="192"
-                fill="#dcfce7"
-                stroke="#86efac"
-              />
-              <text
-                transform="translate(508 364) rotate(-90)"
-                text-anchor="middle"
-                fill="#166534"
-                font-size="11"
-                font-weight="600"
-              >
-                Staging
-              </text>
-
-              <rect
-                class="warehouse-layer"
-                x="554"
-                y="268"
-                width="72"
-                height="192"
-                fill="#bbf7d0"
-                stroke="#4ade80"
-              />
-              <text
-                transform="translate(590 364) rotate(-90)"
-                text-anchor="middle"
-                fill="#166534"
-                font-size="11"
-                font-weight="600"
-              >
-                Intermediate
-              </text>
-
-              <rect
-                class="warehouse-layer"
-                x="636"
-                y="268"
-                width="72"
-                height="192"
-                fill="#86efac"
-                stroke="#22c55e"
-              />
-              <text
-                transform="translate(672 364) rotate(-90)"
-                text-anchor="middle"
-                fill="#14532d"
-                font-size="11"
-                font-weight="600"
-              >
-                Marts
-              </text>
-
-              <text x="590" y="492" text-anchor="middle" fill="#64748b" font-size="11">
-                dbt models
-              </text>
-            </g>
-
-            <!-- Loading indicator arrow -->
-            <g transform="translate(400, 348)">
-              <polygon points="0,0 14,8 0,16" fill="#16a34a" opacity="0.6" />
-              <text x="6" y="32" text-anchor="middle" fill="#15803d" font-size="9">LOAD</text>
-            </g>
-
-            <!-- Serve indicator arrow -->
-            <g transform="translate(760, 348)">
-              <polygon points="0,0 14,8 0,16" fill="#16a34a" opacity="0.6" />
-              <text x="6" y="32" text-anchor="middle" fill="#15803d" font-size="9">SERVE</text>
             </g>
           </svg>
           <figcaption>
@@ -596,8 +527,8 @@
                 accounts production or insolvency)
               </li>
               <li>
-                Practice-wide software: practice management (time and fees), HR (applicants,
-                business units, time off) and IT (user directories, document management)
+                Practice-wide software: practice management (time and fees), HR and IT (employees,
+                hierarchies, users and documents) and Microsoft (calendars, emails and contacts)
               </li>
               <li>Public sources such as Companies House and the Charity Commission</li>
             </ul>
@@ -674,8 +605,10 @@
             <h2 id="pricing-heading">Pricing</h2>
             <p>Pricing is transparent and day-rate based.</p>
             <dl>
-              <dt>Senior engineer day rate</dt>
+              <dt>Implementation day rate</dt>
               <dd>£750 + VAT per day</dd>
+              <dt>Maintenance day rate</dt>
+              <dd>£1,000 + VAT per day</dd>
               <dt>Typical mid-size implementation</dt>
               <dd>Around £100,000 total project cost, including cloud hosting infrastructure</dd>
               <dt>Ongoing annual cost</dt>
@@ -686,41 +619,77 @@
           <section class="stages-section" aria-labelledby="stages-heading">
             <h2 id="stages-heading">Project stages</h2>
             <p>Delivery follows structured stages, so progress is steady and visible:</p>
+            <p class="stages-caption">
+              <span class="approx-mark" aria-hidden="true">~</span>
+              Typical times — they vary by practice
+            </p>
             <ol class="project-stages">
               <li>
-                <strong>Environment setup</strong>
+                <span class="stage-heading">
+                  <strong>Environment setup</strong>
+                  <span class="stage-duration">
+                    <span class="approx-mark" aria-hidden="true">~</span>
+                    <span class="visually-hidden">approximately </span>2 weeks
+                  </span>
+                </span>
                 <span>Cloud platform, version control, CI/CD and dbt</span>
               </li>
               <li>
-                <strong>Pipeline foundation</strong>
+                <span class="stage-heading">
+                  <strong>Pipeline foundation</strong>
+                  <span class="stage-duration">
+                    <span class="approx-mark" aria-hidden="true">~</span>
+                    <span class="visually-hidden">approximately </span>4 weeks
+                  </span>
+                </span>
                 <span>Airflow ingestion pipeline setup, Fivetran</span>
               </li>
               <li>
-                <strong>Source ingestion</strong>
+                <span class="stage-heading">
+                  <strong>Source ingestion</strong>
+                  <span class="stage-duration">
+                    <span class="approx-mark" aria-hidden="true">~</span>
+                    <span class="visually-hidden">approximately </span>3 months
+                  </span>
+                </span>
                 <span>
                   Practice management replication to BigQuery and core services via Airflow, then
                   enrichment from peripheral sources
                 </span>
               </li>
               <li>
-                <strong>Data modelling in dbt</strong>
+                <span class="stage-heading">
+                  <strong>Data modelling in dbt</strong>
+                  <span class="stage-duration">
+                    <span class="approx-mark" aria-hidden="true">~</span>
+                    <span class="visually-hidden">approximately </span>4 weeks
+                  </span>
+                </span>
                 <span>
                   Staging models for standardisation, marts for reporting, a Kimball-style
                   fact–dimension model and standard models for clients, staff and jobs
                 </span>
               </li>
               <li>
-                <strong>Reporting and automations</strong>
+                <span class="stage-heading">
+                  <strong>Reporting and automations</strong>
+                </span>
                 <span>
                   Collaboration with reporting and automation teams to migrate reports and build use
                   cases
                 </span>
               </li>
               <li>
-                <strong>Transition to maintenance</strong>
+                <span class="stage-heading">
+                  <strong>Transition to maintenance</strong>
+                </span>
                 <span>Handover, training and steady-state support</span>
               </li>
             </ol>
+            <p class="stages-footnote">
+              Taken together, an implementation spanning a typical mix of a dozen source systems is
+              often in the region of six months, from first setup through to handover.
+            </p>
           </section>
 
           <section aria-labelledby="summary-heading">

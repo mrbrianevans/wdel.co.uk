@@ -1,4 +1,4 @@
-import { animate, svg, stagger, utils } from "animejs";
+import { animate, svg, utils } from "animejs";
 
 type FlowConfig = {
   pathId: string;
@@ -44,7 +44,7 @@ const inboundSources: FlowConfig[] = [
     durationJitter: 340,
   },
   {
-    pathId: "path-hr",
+    pathId: "path-hr-it",
     color: "#0d9488",
     interval: 2000,
     duration: 2650,
@@ -52,7 +52,7 @@ const inboundSources: FlowConfig[] = [
     durationJitter: 350,
   },
   {
-    pathId: "path-it",
+    pathId: "path-microsoft",
     color: "#0d9488",
     interval: 2400,
     duration: 2700,
@@ -166,14 +166,6 @@ function initDiagramAnimation(): void {
 
   createFlows(inboundSources, packetLayer);
   createFlows(outboundConsumers, packetLayer);
-
-  animate(".warehouse-layer", {
-    opacity: [0.75, 1, 0.75],
-    duration: 2800,
-    delay: stagger(300),
-    ease: "inOutSine",
-    loop: true,
-  });
 }
 
 if (document.readyState === "loading") {
