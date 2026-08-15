@@ -615,41 +615,77 @@
           <section class="stages-section" aria-labelledby="stages-heading">
             <h2 id="stages-heading">Project stages</h2>
             <p>Delivery follows structured stages, so progress is steady and visible:</p>
+            <p class="stages-caption">
+              <span class="approx-mark" aria-hidden="true">~</span>
+              Typical times — they vary by practice
+            </p>
             <ol class="project-stages">
               <li>
-                <strong>Environment setup</strong>
+                <span class="stage-heading">
+                  <strong>Environment setup</strong>
+                  <span class="stage-duration">
+                    <span class="approx-mark" aria-hidden="true">~</span>
+                    <span class="visually-hidden">approximately </span>2 weeks
+                  </span>
+                </span>
                 <span>Cloud platform, version control, CI/CD and dbt</span>
               </li>
               <li>
-                <strong>Pipeline foundation</strong>
+                <span class="stage-heading">
+                  <strong>Pipeline foundation</strong>
+                  <span class="stage-duration">
+                    <span class="approx-mark" aria-hidden="true">~</span>
+                    <span class="visually-hidden">approximately </span>4 weeks
+                  </span>
+                </span>
                 <span>Airflow ingestion pipeline setup, Fivetran</span>
               </li>
               <li>
-                <strong>Source ingestion</strong>
+                <span class="stage-heading">
+                  <strong>Source ingestion</strong>
+                  <span class="stage-duration">
+                    <span class="approx-mark" aria-hidden="true">~</span>
+                    <span class="visually-hidden">approximately </span>3 months
+                  </span>
+                </span>
                 <span>
                   Practice management replication to BigQuery and core services via Airflow, then
                   enrichment from peripheral sources
                 </span>
               </li>
               <li>
-                <strong>Data modelling in dbt</strong>
+                <span class="stage-heading">
+                  <strong>Data modelling in dbt</strong>
+                  <span class="stage-duration">
+                    <span class="approx-mark" aria-hidden="true">~</span>
+                    <span class="visually-hidden">approximately </span>4 weeks
+                  </span>
+                </span>
                 <span>
                   Staging models for standardisation, marts for reporting, a Kimball-style
                   fact–dimension model and standard models for clients, staff and jobs
                 </span>
               </li>
               <li>
-                <strong>Reporting and automations</strong>
+                <span class="stage-heading">
+                  <strong>Reporting and automations</strong>
+                </span>
                 <span>
                   Collaboration with reporting and automation teams to migrate reports and build use
                   cases
                 </span>
               </li>
               <li>
-                <strong>Transition to maintenance</strong>
+                <span class="stage-heading">
+                  <strong>Transition to maintenance</strong>
+                </span>
                 <span>Handover, training and steady-state support</span>
               </li>
             </ol>
+            <p class="stages-footnote">
+              Taken together, an implementation spanning a typical mix of a dozen source systems is
+              often in the region of six months, from first setup through to handover.
+            </p>
           </section>
 
           <section aria-labelledby="summary-heading">
